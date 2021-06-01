@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+    <!--my js  -->
+    <script src="js/script.js"></script>
+    <title>MineField</title>
+    <!-- my link css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>
+                MineField
+            </h1>
+            <h3>
+                Avoid all bombs
+            </h3>
+            <div id="container-difficulty">
+                <select name="difficulty" id="difficulty">
+                    <option value="">
+                        Select the difficulty
+                    </option>
+                    <option value="1">
+                        Easy
+                    </option>
+                    <option value="2">
+                        Medium
+                    </option>
+                    <option value="3">
+                        Hard
+                    </option>
+                </select>
+            </div>
+        </header>
+        <div id="container-game" >
+            <div id="info-game" class="none">
+                <div id="score" class="count score">
+                    000
+                </div>
+                <div id="refresh" class="top_face">
+                    <i class="fas fa-smile"></i>
+                </div>
+                <div id="time" class="count seconds_count">
+                    000
+                </div>
+            </div>
+            <div id="container-square" ></div>
+        </div>    
+    </div>
+    <div></div>
+</body>
+</html>

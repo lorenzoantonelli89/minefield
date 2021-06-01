@@ -1,0 +1,171 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #cfcfcf;
+}
+
+#container{
+    position: relative;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+header>h1{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#container-difficulty{
+    margin-top: 20px;
+}
+
+/* regole contenitore gioco */
+div[class*="container-game"]{
+    margin: 0 auto;
+    border-top: 8px solid #969696;
+    border-bottom: 8px solid #F0F0F0;
+    border-left: 8px solid #969696;
+    border-right: 8px solid #F0F0F0;
+    border-spacing: 0;
+}
+
+.container-game-easy{
+    width: 243px;
+}
+
+.container-game-medium{
+    width: 394px;
+}
+
+.container-game-hard{
+    width: 518px;
+}
+
+#info-game{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* regole info-game, buton refresh, e counter */
+#info-game.none{
+    visibility: hidden;
+}
+
+#refresh{
+    /* height: 60px; */
+    width: 60px;
+    margin: 0 5px;
+    border-bottom: 5px solid #969696;
+    border-top: 5px solid #F0F0F0;
+    border-right: 5px solid #969696;
+    border-left: 5px solid #F0F0F0;
+    cursor: pointer;
+    position: relative;
+    font-size: 40px;
+}
+
+#refresh>i{
+    /* font-size: 40px; */
+    color: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.count{
+    border-bottom: 5px solid #969696;
+    border-top: 5px solid #F0F0F0;
+    border-left: 5px solid #F0F0F0;
+    border-right: 5px solid #969696;
+    font-family: "VT323", monospace;
+    background-color: black;
+    color: red;
+    font-size: 30px;
+    padding: 5px;
+    line-height: 40px;
+}
+
+/* regole container square */
+div[class*="container-square"]{
+    border: 1px solid #9f9f9f;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-square-easy{
+    width: 227px;
+    height: 227px;
+}
+
+.container-square-medium{
+    width: 378px;
+    height: 378px;
+}
+
+.container-square-hard{
+    width: 502px;
+    height: 502px;
+}
+
+/* regole square down */
+div[class*="square-down"]{
+    position: relative;
+    border: 1px solid #9f9f9f;
+}
+
+.square-down.easy{
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+
+.square-down.medium{
+    width: calc(100% / 15);
+    height: calc(100% / 15);
+}
+
+.square-down.hard{
+    width: calc(100% / 20);
+    height: calc(100% / 20);
+}
+
+/* regola icon bomb */
+div[class*="square-down"]>i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+}
+
+/* regole div up in pos absolute */
+
+.square-top{
+    width: 100%;
+    height: 100%;
+    background-color: #cdcdcd;
+    border-top: 5px solid #F0F0F0;
+    border-bottom: 5px solid #969696;
+    border-left: 5px solid #F0F0F0;
+    border-right: 5px solid #969696;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.none{
+    display: none;
+}
