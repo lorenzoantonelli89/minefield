@@ -147,6 +147,7 @@ div[class*="square-down"]>i{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 200;
+    display: none;
 }
 
 /* regole div up in pos absolute */
@@ -168,4 +169,19 @@ div[class*="square-down"]>i{
 
 .none{
     display: none;
+}
+
+/* regole win/lost */
+
+#win, #game-over{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 300;
+    display: none;
+}
+
+#win>img, #game-over>img{
+    width: 100%;
 }
